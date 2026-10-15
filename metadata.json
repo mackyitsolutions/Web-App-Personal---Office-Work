@@ -1,0 +1,6 @@
+{
+  "name": "My Working Space — Personal & Office Management System",
+  "description": "An executive workspace system for managing personal and office work with tasks, subtask checklists, staff documentation portal, projects, and meetings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

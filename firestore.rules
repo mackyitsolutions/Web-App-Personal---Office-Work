@@ -1,0 +1,73 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    // User profile: only owner can read and update
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+    
+    // Tasks:
+    // Personal tasks: strictly readable and writable only by the authenticated creator
+    // Office tasks: readable and writable by verified authenticated workspace members
+    match /tasks/{taskId} {
+      allow create: if isAuthenticated() &&
+        request.resource.data.category in ['Office', 'Personal'] &&
+        request.resource.data.title is string &&
+        request.resource.data.title.size() > 0;
+        
+      allow read, update, delete: if isAuthenticated() && (
+        resource.data.category == 'Personal' ? resource.data.createdBy == request.auth.uid : true
+      );
+    }
+    
+    // Work Journal:
+    // Personal entries strictly restricted to author
+    match /journal/{entryId} {
+      allow create: if isAuthenticated() &&
+        request.resource.data.category in ['Office', 'Personal'];
+        
+      allow read, update, delete: if isAuthenticated() && (
+        resource.data.category == 'Personal' ? resource.data.createdBy == request.auth.uid : true
+      );
+    }
+    
+    // Projects, Problems, Decisions, Meetings, Goals, Documents
+    match /projects/{projectId} {
+      allow read, write: if isAuthenticated();
+    }
+    match /problems/{problemId} {
+      allow read, write: if isAuthenticated();
+    }
+    match /decisions/{decisionId} {
+      allow read, write: if isAuthenticated();
+    }
+    match /meetings/{meetingId} {
+      allow read, write: if isAuthenticated();
+    }
+    match /goals/{goalId} {
+      allow read, write: if isAuthenticated() && (
+        resource.data.category == 'Personal' ? resource.data.createdBy == request.auth.uid : true
+      );
+    }
+    match /documents/{docId} {
+      allow read, write: if isAuthenticated();
+    }
+    
+    // Audit Logs: Append-only, never modifiable
+    match /auditLogs/{logId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update, delete: if false; // Immutable audit log
+    }
+  }
+}

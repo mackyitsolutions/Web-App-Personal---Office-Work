@@ -1,0 +1,106 @@
+{
+  "entities": {
+    "Task": {
+      "collection": "tasks",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "category": { "type": "string", "enum": ["Office", "Personal"], "required": true },
+        "priority": { "type": "string", "enum": ["Critical", "High", "Medium", "Low"], "required": true },
+        "status": { "type": "string", "enum": ["Not Started", "In Progress", "Blocked", "Waiting for Approval", "Completed", "Cancelled"], "required": true },
+        "startDate": { "type": "string" },
+        "dueDate": { "type": "string" },
+        "reminderDate": { "type": "string" },
+        "nextAction": { "type": "string" },
+        "projectId": { "type": "string" },
+        "projectTitle": { "type": "string" },
+        "responsiblePerson": { "type": "string" },
+        "completionNotes": { "type": "string" },
+        "createdAt": { "type": "string", "required": true },
+        "updatedAt": { "type": "string", "required": true },
+        "createdBy": { "type": "string", "required": true }
+      }
+    },
+    "JournalEntry": {
+      "collection": "journal",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "date": { "type": "string", "required": true },
+        "time": { "type": "string", "required": true },
+        "category": { "type": "string", "enum": ["Office", "Personal"], "required": true },
+        "title": { "type": "string", "required": true },
+        "description": { "type": "string" },
+        "actionsPerformed": { "type": "string", "required": true },
+        "results": { "type": "string" },
+        "challenges": { "type": "string" },
+        "lessonsLearned": { "type": "string" },
+        "timeSpentMinutes": { "type": "number" },
+        "nextAction": { "type": "string" },
+        "createdAt": { "type": "string", "required": true },
+        "updatedAt": { "type": "string", "required": true }
+      }
+    },
+    "Project": {
+      "collection": "projects",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "name": { "type": "string", "required": true },
+        "category": { "type": "string", "enum": ["Office", "Personal"], "required": true },
+        "objective": { "type": "string", "required": true },
+        "owner": { "type": "string", "required": true },
+        "startDate": { "type": "string", "required": true },
+        "targetCompletionDate": { "type": "string", "required": true },
+        "status": { "type": "string", "enum": ["Planning", "Active", "On Hold", "Completed", "Cancelled"], "required": true }
+      }
+    },
+    "ProblemRecord": {
+      "collection": "problems",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "category": { "type": "string", "enum": ["Office", "Personal"], "required": true },
+        "title": { "type": "string", "required": true },
+        "problemStatement": { "type": "string", "required": true },
+        "dateIdentified": { "type": "string", "required": true },
+        "impactAndUrgency": { "type": "string", "enum": ["Low", "Medium", "High", "Critical"] },
+        "immediateContainmentAction": { "type": "string" },
+        "status": { "type": "string", "required": true }
+      }
+    },
+    "DecisionRecord": {
+      "collection": "decisions",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "category": { "type": "string", "enum": ["Office", "Personal"], "required": true },
+        "title": { "type": "string", "required": true },
+        "businessProblemOrOpportunity": { "type": "string", "required": true },
+        "recommendedOption": { "type": "string", "required": true },
+        "decisionOwner": { "type": "string", "required": true },
+        "approvalAuthority": { "type": "string", "required": true },
+        "status": { "type": "string", "enum": ["Draft", "Pending Approval", "Approved", "Rejected", "Implemented", "Reviewed"], "required": true }
+      }
+    },
+    "MeetingRecord": {
+      "collection": "meetings",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "category": { "type": "string", "enum": ["Office", "Personal"], "required": true },
+        "title": { "type": "string", "required": true },
+        "dateTime": { "type": "string", "required": true },
+        "purpose": { "type": "string", "required": true },
+        "participants": { "type": "array" }
+      }
+    },
+    "AuditLog": {
+      "collection": "auditLogs",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "timestamp": { "type": "string", "required": true },
+        "action": { "type": "string", "required": true },
+        "entityType": { "type": "string", "required": true },
+        "entityId": { "type": "string", "required": true },
+        "category": { "type": "string", "required": true },
+        "summary": { "type": "string", "required": true }
+      }
+    }
+  }
+}

@@ -1,0 +1,655 @@
+{
+  "user": {
+    "id": "usr_main",
+    "name": "Alex Morgan",
+    "email": "alex.morgan@workos.internal",
+    "jobTitle": "Senior Operations & Projects Lead",
+    "department": "Operations & Strategy",
+    "role": "Manager",
+    "privacyPinEnabled": false
+  },
+  "tasks": [
+    {
+      "id": "TSK-1001",
+      "title": "Finalize Q4 Operational Budget Allocation",
+      "category": "Office",
+      "description": "Review departmental requests against revised enterprise CAPEX limits and reconcile with CFO guidance.",
+      "priority": "Critical",
+      "status": "In Progress",
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-14",
+      "reminderDate": "2026-10-13",
+      "nextAction": "Schedule 30-min reconciliation session with Finance Lead.",
+      "projectId": "PRJ-3001",
+      "projectTitle": "Enterprise Resource Optimization 2026",
+      "responsiblePerson": "Alex Morgan",
+      "relatedDecisionId": "DEC-5001",
+      "createdAt": "2026-10-06",
+      "updatedAt": "2026-10-13",
+      "createdBy": "Alex Morgan"
+    },
+    {
+      "id": "TSK-1002",
+      "title": "Audit Cloud Architecture Security & Firewall Rules",
+      "category": "Office",
+      "description": "Perform penetration review and credential rotation across production API gateways and database clusters.",
+      "priority": "High",
+      "status": "In Progress",
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-20",
+      "nextAction": "Review automated SOC2 scan outputs with DevOps team.",
+      "projectId": "PRJ-3002",
+      "projectTitle": "Infrastructure Reliability & Security Hardening",
+      "responsiblePerson": "DevOps / Alex Morgan",
+      "createdAt": "2026-10-06",
+      "updatedAt": "2026-10-13",
+      "createdBy": "Alex Morgan"
+    },
+    {
+      "id": "TSK-1003",
+      "title": "Conduct Monthly Executive Operations Review",
+      "category": "Office",
+      "description": "Prepare management slide deck covering deliverables, delayed workstreams, and resource allocation requests.",
+      "priority": "High",
+      "status": "Not Started",
+      "startDate": "2026-10-13",
+      "dueDate": "2026-10-20",
+      "nextAction": "Aggregate monthly progress reports across all project owners.",
+      "relatedMeetingId": "MTG-6001",
+      "responsiblePerson": "Alex Morgan",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13",
+      "createdBy": "Alex Morgan"
+    },
+    {
+      "id": "TSK-1004",
+      "title": "Annual Comprehensive Medical Checkup & Lab Work",
+      "category": "Personal",
+      "description": "Schedule fasting blood test, cardiology follow-up, and dental cleaning at Central Clinic.",
+      "priority": "High",
+      "status": "In Progress",
+      "startDate": "2026-10-12",
+      "dueDate": "2026-10-20",
+      "reminderDate": "2026-10-13",
+      "nextAction": "Confirm morning appointment slot with Clinic reception.",
+      "responsiblePerson": "Alex Morgan",
+      "createdAt": "2026-10-12",
+      "updatedAt": "2026-10-13",
+      "createdBy": "Alex Morgan"
+    },
+    {
+      "id": "TSK-1005",
+      "title": "Review Personal Investment Portfolio & Estate Documents",
+      "category": "Personal",
+      "description": "Rebalance index funds, review mortgage amortization, and update beneficiary documentation.",
+      "priority": "Medium",
+      "status": "Not Started",
+      "startDate": "2026-10-13",
+      "dueDate": "2026-10-20",
+      "nextAction": "Download Q3 statements from brokerage portal.",
+      "responsiblePerson": "Alex Morgan",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13",
+      "createdBy": "Alex Morgan"
+    },
+    {
+      "id": "TSK-1006",
+      "title": "Vehicle 50,000km Major Service & Brake Inspection",
+      "category": "Personal",
+      "description": "Book official service center for timing check, brake fluid renewal, and tire rotation.",
+      "priority": "Low",
+      "status": "Completed",
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-12",
+      "completionNotes": "Completed at authorized center. All filters replaced. Next service due at 65,000km.",
+      "responsiblePerson": "Alex Morgan",
+      "createdAt": "2026-10-06",
+      "updatedAt": "2026-10-12",
+      "createdBy": "Alex Morgan"
+    },
+    {
+      "id": "TSK-1007",
+      "title": "Resolve Warehouse Order Fulfillment Latency Issue",
+      "category": "Office",
+      "description": "Address unexpected 48-hour dispatch delays reported by European logistics hub.",
+      "priority": "Critical",
+      "status": "Waiting for Approval",
+      "startDate": "2026-10-06",
+      "dueDate": "2026-10-13",
+      "nextAction": "Awaiting signature on backup courier service agreement.",
+      "projectId": "PRJ-3001",
+      "projectTitle": "Enterprise Resource Optimization 2026",
+      "responsiblePerson": "Logistics Supervisor",
+      "createdAt": "2026-10-06",
+      "updatedAt": "2026-10-13",
+      "createdBy": "Alex Morgan"
+    }
+  ],
+  "journal": [
+    {
+      "id": "JRN-2001",
+      "date": "2026-10-13",
+      "time": "09:15",
+      "category": "Office",
+      "title": "Q4 Budget Alignment Meeting & Cost Driver Analysis",
+      "description": "Met with departmental heads to review projected cloud infrastructure expenditures and license renewals.",
+      "objective": "Prevent budget overruns without impacting production uptime.",
+      "actionsPerformed": "Analyzed AWS & GCP cost spikes. Identified 18 idle non-production environments.",
+      "results": "Secured commitment to decommission staging clusters, saving estimated $3,400 monthly.",
+      "challenges": "Engineering teams hesitant to release reserved compute instances.",
+      "lessonsLearned": "Automated auto-shutdown policies achieve compliance faster than manual requests.",
+      "timeSpentMinutes": 75,
+      "projectId": "PRJ-3001",
+      "nextAction": "Draft decommission script proposal with Tech Lead.",
+      "followUpDate": "2026-10-14",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "JRN-2002",
+      "date": "2026-10-13",
+      "time": "07:00",
+      "category": "Personal",
+      "title": "Morning 5km Zone 2 Run & Mindfulness Session",
+      "description": "Maintained steady aerobic heart rate below 142 bpm. Focused on consistent pacing.",
+      "objective": "Cardiovascular conditioning and mental clarity for the upcoming sprint week.",
+      "actionsPerformed": "5.2 km run in 28 mins followed by 10 mins mobility stretching.",
+      "results": "Resting heart rate recovered to normal within 4 minutes.",
+      "timeSpentMinutes": 45,
+      "lessonsLearned": "Proper hydration the night before noticeably improves early morning stamina.",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "JRN-2003",
+      "date": "2026-10-12",
+      "time": "14:30",
+      "category": "Office",
+      "title": "Post-Mortem on Production Payment Webhook Interruption",
+      "description": "Analyzed transient 12-minute webhook timeout during payment provider gateway maintenance.",
+      "objective": "Ensure zero transaction loss and implement automatic exponential retry mechanism.",
+      "actionsPerformed": "Traced logs with security lead. Re-enqueued 14 stalled event payloads.",
+      "results": "All 14 payments successfully acknowledged. No customer financial impact occurred.",
+      "challenges": "Third-party status page took 20 minutes to reflect outage.",
+      "lessonsLearned": "Local circuit breaker must immediately switch to dead-letter queue when latency spikes past 2500ms.",
+      "timeSpentMinutes": 90,
+      "projectId": "PRJ-3002",
+      "nextAction": "Update Payment gateway retry logic in sprint backlog.",
+      "createdAt": "2026-10-12",
+      "updatedAt": "2026-10-12"
+    }
+  ],
+  "projects": [
+    {
+      "id": "PRJ-3001",
+      "name": "Enterprise Resource Optimization 2026",
+      "category": "Office",
+      "objective": "Streamline operational expenditures and optimize inter-departmental logistics workflows to reduce lead times by 25%.",
+      "scope": "Covers regional supply chain, vendor contracts, software seat audits, and process re-engineering.",
+      "expectedResults": "Estimated $120,000 annual operational savings and under-24-hour order fulfillment.",
+      "owner": "Alex Morgan",
+      "stakeholders": [
+        "COO Sarah Jenkins",
+        "CFO David Wu",
+        "Logistics Director Elena Rostova"
+      ],
+      "startDate": "2026-08-01",
+      "targetCompletionDate": "2026-12-15",
+      "milestones": [
+        {
+          "id": "MS-1",
+          "title": "Comprehensive Vendor Contract Audit",
+          "dueDate": "2026-09-01",
+          "isCompleted": true,
+          "completedAt": "2026-08-28"
+        },
+        {
+          "id": "MS-2",
+          "title": "Cloud Infrastructure Right-Sizing",
+          "dueDate": "2026-10-20",
+          "isCompleted": false
+        },
+        {
+          "id": "MS-3",
+          "title": "Warehouse Automation Dispatch System Rollout",
+          "dueDate": "2026-11-30",
+          "isCompleted": false
+        },
+        {
+          "id": "MS-4",
+          "title": "Executive Post-Implementation Review",
+          "dueDate": "2026-12-15",
+          "isCompleted": false
+        }
+      ],
+      "deliverables": [
+        {
+          "id": "DEL-1",
+          "title": "Vendor Rationalization Summary Report",
+          "status": "Accepted"
+        },
+        {
+          "id": "DEL-2",
+          "title": "Staging Cluster Auto-Decommission Runbook",
+          "status": "In Review"
+        },
+        {
+          "id": "DEL-3",
+          "title": "Dispatch API Gateway v2 Integration",
+          "status": "Pending"
+        }
+      ],
+      "status": "Active",
+      "risks": [
+        "Vendor price renegotiation resistance",
+        "Warehouse staff training curve during peak sales season"
+      ],
+      "dependencies": [
+        "Finance sign-off on adjusted tier caps",
+        "Vendor API v3 release date"
+      ],
+      "linkedTaskIds": [
+        "TSK-1001",
+        "TSK-1007"
+      ],
+      "createdAt": "2026-08-01T08:00:00Z",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "PRJ-3002",
+      "name": "Infrastructure Reliability & Security Hardening",
+      "category": "Office",
+      "objective": "Achieve SOC2 Type II compliance readiness and establish sub-second database failover capabilities across two regional zones.",
+      "scope": "PostgreSQL clusters, secret rotation mechanisms, API authentication tokens, and backup automation.",
+      "expectedResults": "99.99% availability SLA and zero unencrypted credential storage.",
+      "owner": "Alex Morgan",
+      "stakeholders": [
+        "Chief Information Security Officer",
+        "Head of Platform Engineering"
+      ],
+      "startDate": "2026-09-01",
+      "targetCompletionDate": "2026-11-30",
+      "milestones": [
+        {
+          "id": "MS-201",
+          "title": "Database Cold Backup & Point-in-Time Recovery Drill",
+          "dueDate": "2026-09-25",
+          "isCompleted": true,
+          "completedAt": "2026-09-24"
+        },
+        {
+          "id": "MS-202",
+          "title": "Zero-Trust Bastion Host & IAM Role Restructuring",
+          "dueDate": "2026-10-25",
+          "isCompleted": false
+        },
+        {
+          "id": "MS-203",
+          "title": "Third-party Penetration Testing Certification",
+          "dueDate": "2026-11-20",
+          "isCompleted": false
+        }
+      ],
+      "deliverables": [
+        {
+          "id": "DEL-201",
+          "title": "Disaster Recovery Runbook & Drill Sign-off",
+          "status": "Accepted"
+        },
+        {
+          "id": "DEL-202",
+          "title": "SOC2 Evidence Repository & Policy Matrix",
+          "status": "In Review"
+        }
+      ],
+      "status": "Active",
+      "risks": [
+        "Third-party audit team availability backlog"
+      ],
+      "linkedTaskIds": [
+        "TSK-1002"
+      ],
+      "createdAt": "2026-09-01T08:00:00Z",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "PRJ-3003",
+      "name": "Personal Health & Marathon Endurance Conditioning",
+      "category": "Personal",
+      "objective": "Prepare physical stamina, nutrition, and cardiovascular threshold to comfortably complete the Spring Half Marathon in under 1h 45m.",
+      "owner": "Alex Morgan",
+      "startDate": "2026-08-15",
+      "targetCompletionDate": "2026-12-01",
+      "milestones": [
+        {
+          "id": "MS-301",
+          "title": "Establish Weekly 30km Base Mileage",
+          "dueDate": "2026-09-15",
+          "isCompleted": true,
+          "completedAt": "2026-09-12"
+        },
+        {
+          "id": "MS-302",
+          "title": "Biometrics & VO2 Max Assessment with Sports Physician",
+          "dueDate": "2026-10-25",
+          "isCompleted": false
+        },
+        {
+          "id": "MS-303",
+          "title": "Official 15km Race Simulation",
+          "dueDate": "2026-11-15",
+          "isCompleted": false
+        }
+      ],
+      "deliverables": [
+        {
+          "id": "DEL-301",
+          "title": "Personalized Nutrition & Electrolyte Timing Plan",
+          "status": "Accepted"
+        }
+      ],
+      "status": "Active",
+      "linkedTaskIds": [
+        "TSK-1004"
+      ],
+      "createdAt": "2026-08-15T08:00:00Z",
+      "updatedAt": "2026-10-13"
+    }
+  ],
+  "problems": [
+    {
+      "id": "PRB-4001",
+      "category": "Office",
+      "title": "Regional Warehouse Order Fulfillment Latency Spike",
+      "problemStatement": "Average dispatch turnaround time increased from 14 hours to 48 hours over the past two weeks, resulting in customer service escalations.",
+      "dateIdentified": "2026-10-06",
+      "currentSituation": "Orders are queuing in the staging buffer faster than the picking floor can pack and scan them.",
+      "factsAndEvidence": [
+        "Verified ERP database dispatch logs show 640 orders delayed beyond SLA.",
+        "Barcode scanner battery degradations caused 25% station downtime during shift handovers.",
+        "Recent software update to Inventory v4 added 3 mandatory verification modals per item."
+      ],
+      "missingInformation": [
+        "Exact network latency metrics between handheld scanners and local Wi-Fi access points during peak hours."
+      ],
+      "assumptionsAndUncertainties": [
+        "Assumption: Warehouse floor staff headcount is sufficient if software latency is resolved.",
+        "Uncertainty: Whether supplier packaging changes contributed to barcode scan retries."
+      ],
+      "impactAndUrgency": "High",
+      "stakeholdersAffected": [
+        "Customer Support Team",
+        "Logistics Supervisors",
+        "E-commerce Customers"
+      ],
+      "immediateContainmentAction": "Reverted scanner software to v3.8 on 30 primary handheld units; brought in 4 temporary scanning stations.",
+      "rootCauseAnalysis": {
+        "method": "Five Whys",
+        "fiveWhys": [
+          "Why are dispatches delayed? -> Orders spend 2.5x longer at packing verification stations.",
+          "Why do packing stations take longer? -> Operators must scan each item barcode 3 times due to redundant modal popups.",
+          "Why are redundant popups occurring? -> New software release v4 enabled compliance verification checks by default.",
+          "Why was this enabled without staging validation? -> Release pipeline skipped the floor user acceptance test.",
+          "Root Cause: Deployment checklist lacked sign-off requirement from warehouse floor lead prior to production push."
+        ],
+        "contributingFactors": [
+          "Aged scanner hardware battery degradation",
+          "Inadequate floor Wi-Fi signal in Zone C"
+        ],
+        "summaryRootCause": "Untested ERP client UX changes pushed directly to production without physical workstation testing."
+      },
+      "possibleSolutions": [
+        {
+          "id": "SOL-1",
+          "name": "Hotfix ERP software to streamline scanning flow into a single confirmation beep",
+          "description": "Deploy software patch removing the redundant confirmation dialogues and optimizing caching.",
+          "advantages": "Directly addresses the 2.5x delay; zero physical hardware cost.",
+          "disadvantages": "Requires emergency engineering release cycle.",
+          "estimatedCost": "$2,000 engineering time",
+          "estimatedEffort": "Low",
+          "risks": "Low risk if regression tested on staging handhelds first."
+        },
+        {
+          "id": "SOL-2",
+          "name": "Permanently increase warehouse packing staff by 4 full-time contractors",
+          "description": "Hire additional manual operators to absorb the extra verification burden.",
+          "advantages": "Provides immediate physical labor redundancy.",
+          "disadvantages": "High ongoing payroll expenditure ($14,000/mo); masks root software inefficiency.",
+          "estimatedCost": "$168,000 annually",
+          "estimatedEffort": "High",
+          "risks": "Onboarding lag; high turnover."
+        }
+      ],
+      "recommendedSolution": "Deploy ERP Hotfix (SOL-1) combined with Wi-Fi repeater relocation in Zone C.",
+      "recommendationRationale": "Solves the verified root cause at minimal cost and restores the 14-hour SLA sustainably.",
+      "requiredApproval": "Logistics Director & VP Engineering",
+      "actionPlan": "1. Validate hotfix on test handheld (Oct 14). 2. Roll out to production during 22:00 maintenance window. 3. Monitor dispatch queue for 48 hours.",
+      "responsiblePerson": "Lead ERP Engineer / Alex Morgan",
+      "deadline": "2026-10-14",
+      "successCriteria": "Average dispatch turnaround time returns to under 16 hours within 48 hours of hotfix release.",
+      "status": "Solution Selected",
+      "createdAt": "2026-10-06",
+      "updatedAt": "2026-10-13"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC-5001",
+      "category": "Office",
+      "title": "Migration from Dedicated Staging Servers to On-Demand Ephemeral Environments",
+      "background": "Current staging environment costs $5,800/month while standing idle 68% of the time during non-working hours and weekends.",
+      "businessProblemOrOpportunity": "Opportunity to trim recurring cloud spend by 60% while speeding up testing pipelines using containerized preview builds.",
+      "optionsConsidered": [
+        {
+          "id": "OPT-1",
+          "name": "On-Demand Ephemeral Container Environments (Recommended)",
+          "benefits": "Reduces monthly cost to ~$1,900; provides fresh isolated test environments for every pull request.",
+          "tradeOffs": "Initial 2-3 minute cold-start spin-up time for first QA tester.",
+          "riskRating": "Low"
+        },
+        {
+          "id": "OPT-2",
+          "name": "Keep Existing Fixed VMs with Scheduled Cron Power-Down",
+          "benefits": "Zero changes to existing developer test workflows.",
+          "tradeOffs": "Saves only 35%; shared staging environments still suffer database collision issues between engineers.",
+          "riskRating": "Medium"
+        }
+      ],
+      "supportingEvidence": "Analysis of past 90 days AWS CloudWatch utilization metrics indicated average CPU utilization below 4.2% outside 09:00-18:00.",
+      "assumptions": "Engineers tolerate 2-minute container boot time in exchange for isolated PR staging domains.",
+      "recommendedOption": "Option 1: Ephemeral Container Environments via Kubernetes autoscaling.",
+      "decisionOwner": "Alex Morgan",
+      "approvalAuthority": "Chief Technology Officer",
+      "status": "Approved",
+      "decisionDate": "2026-10-12",
+      "implementationActions": [
+        "Implement GitHub Actions runner workflow for ephemeral deployments.",
+        "Migrate staging secrets to vault manager.",
+        "Decommission legacy EC2 staging instances by Oct 31."
+      ],
+      "reviewDate": "2026-11-15",
+      "actualOutcome": "Approved in executive technical review; phase 1 implementation scheduled for current sprint.",
+      "createdAt": "2026-10-06",
+      "updatedAt": "2026-10-13"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "MTG-6001",
+      "category": "Office",
+      "title": "Weekly Cross-Functional Operations & Priorities Sync",
+      "dateTime": "2026-10-13T10:00:00Z",
+      "purpose": "Align project roadmaps, address cross-team bottlenecks, and finalize weekly priorities.",
+      "participants": [
+        "Alex Morgan (Chair)",
+        "Sarah Jenkins (COO)",
+        "Elena Rostova (Logistics)",
+        "Marcus Vance (Engineering)"
+      ],
+      "agenda": [
+        "1. Review of Q4 Operations Milestones & KPIs",
+        "2. Warehouse Dispatch Latency Hotfix Status",
+        "3. Cloud Infrastructure Cost Decommissioning",
+        "4. Action Items & Next Week Commitments"
+      ],
+      "discussionNotes": "Elena confirmed the temporary manual scanning stations stabilized the dispatch backlog. Marcus reported the ERP hotfix passed QA testing on test scanners. Sarah requested updated monthly cost savings figures by Friday afternoon.",
+      "keyIssues": [
+        "Zone C warehouse Wi-Fi dead-zone identified during walk-through.",
+        "Approval needed from Finance for the secondary courier contract."
+      ],
+      "decisionsMade": [
+        "Approved deployment of ERP scanner hotfix tonight at 22:00.",
+        "Agreed to decommission 18 idle staging servers by end of month."
+      ],
+      "actionItems": [
+        {
+          "id": "ACT-601",
+          "description": "Deploy ERP scanner hotfix and conduct live validation on morning shift.",
+          "responsiblePerson": "Marcus Vance",
+          "deadline": "2026-10-14",
+          "status": "Open"
+        },
+        {
+          "id": "ACT-602",
+          "description": "Submit revised Staging Decommissioning cost savings report to Sarah.",
+          "responsiblePerson": "Alex Morgan",
+          "deadline": "2026-10-20",
+          "status": "Open"
+        }
+      ],
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
+    }
+  ],
+  "goals": [
+    {
+      "id": "GOL-7001",
+      "category": "Office",
+      "title": "Attain PMP & Advanced Systems Architecture Certification",
+      "description": "Strengthen enterprise governance and agile systems design credentials through accredited coursework and formal examination.",
+      "targetDate": "2026-12-20",
+      "milestones": [
+        {
+          "id": "GM-1",
+          "title": "Complete 35 Contact Hours Training Modules",
+          "completed": true
+        },
+        {
+          "id": "GM-2",
+          "title": "Complete 4 Simulated Mock Exams with >85% score",
+          "completed": true
+        },
+        {
+          "id": "GM-3",
+          "title": "Sit Formal Examination and Obtain Credential",
+          "completed": false
+        }
+      ],
+      "progressPercentage": 66,
+      "successCriteria": "Official certification awarded and logged in corporate talent matrix.",
+      "weeklyObstacles": [
+        "Balancing evening study time with intense Q4 project deadlines."
+      ],
+      "createdAt": "2026-08-01T00:00:00Z",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "GOL-7002",
+      "category": "Personal",
+      "title": "Master Classical Spanish Guitar Repertoire & Music Theory",
+      "description": "Practice 45 minutes 4 days per week focusing on fingerstyle precision and reading notation.",
+      "targetDate": "2026-12-31",
+      "milestones": [
+        {
+          "id": "GM-201",
+          "title": "Learn Tarrega - Recuerdos de la Alhambra (Intro & A Section)",
+          "completed": true
+        },
+        {
+          "id": "GM-202",
+          "title": "Master Tremolo technique at 120 bpm",
+          "completed": false
+        }
+      ],
+      "progressPercentage": 50,
+      "successCriteria": "Record full clean performance piece without score prompts.",
+      "createdAt": "2026-08-01T00:00:00Z",
+      "updatedAt": "2026-10-13"
+    }
+  ],
+  "documents": [
+    {
+      "id": "DOC-8001",
+      "category": "Office",
+      "title": "Standard Operating Procedure: Production Incident Severity Classification & Escalation",
+      "type": "Procedure",
+      "content": "### 1. Purpose\nThis procedure defines the criteria and response times for classifying and responding to operational and technology incidents.\n\n### 2. Severity Levels\n- **Sev-1 (Critical Outage):** Customer-facing disruption impacting core transactions or data privacy. Maximum response time: 15 minutes.\n- **Sev-2 (Degraded Operations):** Major feature impairment with available manual workaround. Maximum response time: 60 minutes.\n- **Sev-3 (Minor Defect):** Non-blocking glitch or administrative reporting issue. Maximum response time: 1 business day.\n\n### 3. Escalation Chain\n1. Primary On-Call Engineer -> 2. Incident Commander (Alex Morgan) -> 3. VP Engineering -> 4. Executive Stakeholders.",
+      "tags": [
+        "SOP",
+        "Incident Response",
+        "Governance",
+        "Operations"
+      ],
+      "owner": "Alex Morgan",
+      "confidentiality": "Internal",
+      "createdAt": "2026-08-10T00:00:00Z",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "DOC-8002",
+      "category": "Office",
+      "title": "Lessons Learned: Cloud Database Failover & Replication Drift",
+      "type": "Lesson Learned",
+      "content": "### Key Takeaway\nAsynchronous database replication across distant cloud regions can accumulate silent replication lag during high write spikes. Always configure strict monitoring on byte lag before executing planned switchovers.",
+      "tags": [
+        "Database",
+        "Cloud",
+        "Architecture",
+        "Post-Mortem"
+      ],
+      "owner": "Alex Morgan",
+      "confidentiality": "Confidential",
+      "relatedProjectId": "PRJ-3002",
+      "createdAt": "2026-09-25T00:00:00Z",
+      "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "DOC-8003",
+      "category": "Personal",
+      "title": "Personal Financial Independence Blueprint & Emergency Fund Strategy",
+      "type": "Reference",
+      "content": "### Target Allocation\n- 6 Months Liquid High-Yield Savings Reserve (Unconditional Living Expenses)\n- 70% Global Diversified Broad Market Index ETF\n- 15% Short-to-Medium Term Government Bonds\n- 15% Opportunistic Liquid Capital Reserve",
+      "tags": [
+        "Personal Finance",
+        "Strategy",
+        "Retirement"
+      ],
+      "owner": "Alex Morgan",
+      "confidentiality": "Restricted",
+      "createdAt": "2026-07-01T00:00:00Z",
+      "updatedAt": "2026-10-13"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "AUD-001",
+      "timestamp": "2026-10-12",
+      "userId": "usr_main",
+      "action": "CREATE",
+      "entityType": "Task",
+      "entityId": "TSK-1001",
+      "category": "Office",
+      "summary": "Created task \"Finalize Q4 Operational Budget Allocation\""
+    },
+    {
+      "id": "AUD-002",
+      "timestamp": "2026-10-13",
+      "userId": "usr_main",
+      "action": "UPDATE",
+      "entityType": "Problem",
+      "entityId": "PRB-4001",
+      "category": "Office",
+      "summary": "Updated root cause analysis and selected containment solution"
+    }
+  ]
+}
